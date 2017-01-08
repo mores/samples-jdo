@@ -4,7 +4,7 @@ import javax.jdo.annotations.*;
 import org.datanucleus.api.jdo.annotations.*;
 
 @PersistenceCapable(detachable="true")
-@MultiTenant(column="TENANT") // Provide column name for multitenant discrim
+@MultiTenant(disable=true)
 public class Person
 {
     @PrimaryKey

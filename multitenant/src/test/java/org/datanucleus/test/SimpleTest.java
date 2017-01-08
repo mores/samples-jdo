@@ -24,7 +24,7 @@ public class SimpleTest
         PersistenceManager pm = pmf.getPersistenceManager();
 
         // Enable this to specify the tenant name per PM
-//      pm.setProperty("datanucleus.tenantID", "First");
+        pm.setProperty("datanucleus.tenantID", "First");
         Transaction tx = pm.currentTransaction();
         try
         {
@@ -55,7 +55,7 @@ public class SimpleTest
         pm = pmf.getPersistenceManager();
 
         // Enable this to specify the tenant name per PM
-//      pm.setProperty("datanucleus.tenantID", "Second");
+        pm.setProperty("datanucleus.tenantID", "Second");
         tx = pm.currentTransaction();
         try
         {
